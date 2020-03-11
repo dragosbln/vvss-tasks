@@ -25,11 +25,9 @@ public class Notificator extends Thread {
     public void run() {
         Date currentDate = new Date();
         while (true) {
-
             for (Task t : tasksList) {
                 if (t.isActive()) {
                     if (t.isRepeated() && t.getEndTime().after(currentDate)){
-
                         Date next = t.nextTimeAfter(currentDate);
                         long currentMinute = getTimeInMinutes(currentDate);
                         long taskMinute = getTimeInMinutes(next);
@@ -38,21 +36,18 @@ public class Notificator extends Thread {
                         }
                     }
                     else {
-                        if (!t.isRepeated()){
-                            if (getTimeInMinutes(currentDate) == getTimeInMinutes(t.getTime())){
-                                showNotification(t);
-                            }
+                        if ( !t.isRepeated() && getTimeInMinutes(currentDate) == getTimeInMinutes(t.getTime())){
+                            showNotification(t);
                         }
-
                     }
                 }
-
             }
             try {
                 Thread.sleep(millisecondsInSec*secondsInMin);
 
             } catch (InterruptedException e) {
                 log.error("thread interrupted exception");
+                Thread.currentThread().interrupt();
             }
             currentDate = new Date();
         }
