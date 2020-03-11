@@ -104,6 +104,9 @@ public class Controller {
         catch (IOException e){
             log.error("Error loading new-edit-task.fxml");
         }
+        catch (NullPointerException e){
+            log.error("Error: no task selected!");
+        }
     }
     @FXML
     public void deleteTask(){
@@ -130,14 +133,18 @@ public class Controller {
     }
     @FXML
     public void showFilteredTasks(){
-        Date start = getDateFromFilterField(datePickerFrom.getValue(), fieldTimeFrom.getText());
-        Date end = getDateFromFilterField(datePickerTo.getValue(), fieldTimeTo.getText());
+        try {
+            Date start = getDateFromFilterField(datePickerFrom.getValue(), fieldTimeFrom.getText());
+            Date end = getDateFromFilterField(datePickerTo.getValue(), fieldTimeTo.getText());
 
-        Iterable<Task> filtered =  service.filterTasks(start, end);
+            Iterable<Task> filtered =  service.filterTasks(start, end);
 
-        ObservableList<Task> observableTasks = FXCollections.observableList((ArrayList)filtered);
-        tasks.setItems(observableTasks);
-        updateCountLabel(observableTasks);
+            ObservableList<Task> observableTasks = FXCollections.observableList((ArrayList)filtered);
+            tasks.setItems(observableTasks);
+            updateCountLabel(observableTasks);
+        } catch (Exception e){
+            log.error("Invalid date input!");
+        }
     }
     private Date getDateFromFilterField(LocalDate localDate, String time){
         Date date = dateService.getDateValueFromLocalDate(localDate);
