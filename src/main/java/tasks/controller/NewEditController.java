@@ -182,6 +182,16 @@ public class NewEditController {
         }
         return result;
     }
+
+    private Task createRepeatedTask(String title, Date startDate, Date endDate, int interval) {
+
+         if(interval < 1) throw new IllegalArgumentException("Interval can not be lower than 1");
+         if(startDate.after(endDate)) throw new IllegalArgumentException("Start date should be before end");
+         if(title.equals("")) throw new IllegalArgumentException("Title must not be empty");
+
+         return new Task(title, startDate, endDate, interval);
+    }
+
     private Task makeTask(){
         Task result;
         String newTitle = fieldTitle.getText();
@@ -191,8 +201,8 @@ public class NewEditController {
             Date endDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerEnd.getValue());
             Date newEndDate = dateService.getDateMergedWithTime(txtFieldTimeEnd.getText(), endDateWithNoTime);
             int newInterval = service.parseFromStringToSeconds(fieldInterval.getText());
-            if (newStartDate.after(newEndDate)) throw new IllegalArgumentException("Start date should be before end");
-            result = new Task(newTitle, newStartDate,newEndDate, newInterval);
+
+            result = createRepeatedTask(newTitle, newStartDate, newEndDate, newInterval);
         }
         else {
             result = new Task(newTitle, newStartDate);
