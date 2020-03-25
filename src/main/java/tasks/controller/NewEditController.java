@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
 import tasks.services.TaskIO;
+import tasks.services.TaskValidator;
 import tasks.services.TasksService;
 
 import java.io.IOException;
@@ -185,9 +186,8 @@ public class NewEditController {
 
     private Task createRepeatedTask(String title, Date startDate, Date endDate, int interval) {
 
-         if(interval < 1) throw new IllegalArgumentException("Interval can not be lower than 1");
-         if(startDate.after(endDate)) throw new IllegalArgumentException("Start date should be before end");
-         if(title.equals("")) throw new IllegalArgumentException("Title must not be empty");
+        TaskValidator taskValidator = new TaskValidator();
+        taskValidator.validate(title, startDate, endDate, interval);
 
          return new Task(title, startDate, endDate, interval);
     }
