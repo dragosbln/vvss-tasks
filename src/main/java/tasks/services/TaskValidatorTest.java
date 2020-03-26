@@ -1,9 +1,6 @@
 package tasks.services;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.text.SimpleDateFormat;
 
@@ -11,7 +8,8 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
+@DisplayName("TaskValidatorTests")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class TaskValidatorTest {
 
     private static int interval;
@@ -42,6 +40,7 @@ class TaskValidatorTest {
 
     // ECP tests
     @Test
+    @Order(1)
     @Tag("ECP")
     @Tag("Title")
     @Tag("Exception")
@@ -57,6 +56,7 @@ class TaskValidatorTest {
     }
 
     @Test
+    @Order(2)
     @Tag("ECP")
     @Tag("Title")
     void testValidTaskTitle(){
@@ -64,6 +64,7 @@ class TaskValidatorTest {
     }
 
     @Test
+    @Order(3)
     @Tag("ECP")
     @Tag("Date")
     void testValidDates(){
@@ -71,6 +72,7 @@ class TaskValidatorTest {
     }
 
     @Test
+    @Order(4)
     @Tag("ECP")
     @Tag("Date")
     @Tag("Exception")
@@ -92,6 +94,7 @@ class TaskValidatorTest {
 
     // BVA tests
     @Test
+    @Order(5)
     @Tag("BVA")
     @Tag("Interval")
     @Tag("Exception")
@@ -107,6 +110,7 @@ class TaskValidatorTest {
     }
 
     @Test
+    @Order(6)
     @Tag("BVA")
     @Tag("Interval")
     void testMinIntervalValue(){
@@ -115,10 +119,27 @@ class TaskValidatorTest {
     }
 
     @Test
+    @Order(7)
     @Tag("BVA")
     @Tag("Interval")
     void testRightMinIntervalValue(){
         interval = 2;
         taskValidator.validate(title, startDate, endDate, interval);
+    }
+
+    @Test
+    @Order(8)
+    @Tag("BVA")
+    @Tag("Interval")
+    @Disabled
+    void testInvalidLeftIntervalValue(){
+        interval = -1;
+        IllegalArgumentException thrown = assertThrows(
+                IllegalArgumentException.class,
+                () -> taskValidator.validate(title, startDate, endDate, interval),
+                "Expected validate() to throw IllegalArgumentException, but it didn't"
+        );
+
+        assertTrue(thrown.getMessage().contains("Interval can not be lower than 1"));
     }
 }
