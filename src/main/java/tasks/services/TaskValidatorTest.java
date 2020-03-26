@@ -44,7 +44,7 @@ class TaskValidatorTest {
     @Tag("ECP")
     @Tag("Title")
     @Tag("Exception")
-    void testNullTaskTitle() {
+    void testEmptyTaskTitle() {
         title = "";
         IllegalArgumentException thrown = assertThrows(
                 IllegalArgumentException.class,
