@@ -131,6 +131,7 @@ class TaskValidatorTest {
     @Order(8)
     @Tag("BVA")
     @Tag("Interval")
+    @Tag("Exception")
     @Disabled
     void testInvalidLeftIntervalValue(){
         interval = -1;

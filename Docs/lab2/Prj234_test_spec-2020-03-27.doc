@@ -12,13 +12,13 @@
 <p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
 <div class="doc_title"><p>Test Specification</p></div>
 <div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj234<br>Test Suite: Prj234 - hdir2313_BBT</p></div>
-<div class="summary"><p id="printedby">Printed by TestLink on 25/03/2020</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 27/03/2020</p></div>
 <div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
 <h1 class="doclevel" >Scope</h1>
 <div class="txtlevel"><p>
 	Testing project for group 234</p></div>
  <br/><h1 class='doclevel'>Test Suite : hdir2313_BBT</h1>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-2: testNullTaskTitle</th></tr>
+<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-2: testEmptyTaskTitle</th></tr>
 <tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
