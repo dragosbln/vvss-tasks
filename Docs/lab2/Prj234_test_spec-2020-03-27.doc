@@ -14,51 +14,102 @@
 <div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj234<br>Test Suite: Prj234 - hdir2313_BBT</p></div>
 <div class="summary"><p id="printedby">Printed by TestLink on 27/03/2020</p></div>
 <div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
-<h1 class="doclevel" >Scope</h1>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><b><p style="padding-left: 20px;"><a href="#toc_1">1. hdir2313_BBT</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_tc40952">Prj234-2: testEmptyTaskTitle</a></p><p style="padding-left: 45px;"><a href="#toc_tc40964">Prj234-3: testValidTaskTitle</a></p><p style="padding-left: 45px;"><a href="#toc_tc40968">Prj234-4: testValidDates</a></p><p style="padding-left: 45px;"><a href="#toc_tc40970">Prj234-5: testInvalidDates</a></p><p style="padding-left: 45px;"><a href="#toc_tc40972">Prj234-6: testLeftMinIntervalValue</a></p><p style="padding-left: 45px;"><a href="#toc_tc40974">Prj234-7: testMinIntervalValue</a></p><p style="padding-left: 45px;"><a href="#toc_tc40976">Prj234-8: testRightMinIntervalValue</a></p></div><h1 class="doclevel" >Scope</h1>
 <div class="txtlevel"><p>
 	Testing project for group 234</p></div>
- <br/><h1 class='doclevel'>Test Suite : hdir2313_BBT</h1>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-2: testEmptyTaskTitle</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1. Test Suite : hdir2313_BBT</h1>
+<a name="toc_tc40952"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-2: testEmptyTaskTitle</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator throws an error for an empty string (&quot;&quot;) as the task title.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-3: testValidTaskTitle</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40964"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-3: testValidTaskTitle</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator successfully validates a task with a valid title.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-4: testValidDates</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40968"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-4: testValidDates</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator successfully validates a task with 2 valid dates (the startDate is smaller than the endDate).</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-5: testInvalidDates</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40970"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-5: testInvalidDates</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator throws an error for 2 invalid dates (startDate is bigger than endDate).</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-6: testLeftMinIntervalValue</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40972"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-6: testLeftMinIntervalValue</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator throws an error for an interval with the value of 0 (left of the lower limit).</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-7: testMinIntervalValue</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40974"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-7: testMinIntervalValue</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator successfully validates a task for an interval with the value of 1 (the lower limit).</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
-<p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-8: testRightMinIntervalValue</th></tr>
-<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
+<a name="toc_tc40976"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-8: testRightMinIntervalValue</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Check if the taskValidator successfully validates a task for an interval with the value of 2 (right of the lower limit).</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Manual</td></tr>
 <tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
 <tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
-<tr><td colspan="3"></td></tr></table>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" ></td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" ></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">hdir2313_F01:  Lab02<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
 </div>
 
 </body>
