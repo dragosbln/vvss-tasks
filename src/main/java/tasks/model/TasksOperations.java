@@ -28,11 +28,11 @@ public class TasksOperations {
         return incomingTasks;
     }
 
-    public Iterable<Task> tasksByTitle(String title) throws Exception {
+    public Iterable<Task> tasksByTitle(String title) throws IllegalArgumentException {
         if(title.equals(""))
-            throw new Exception("Titlul cautat nu poate fi vid!");
+            throw new IllegalArgumentException("Titlul cautat nu poate fi vid!");
         if(title.length() > 30)
-            throw new Exception("Lungime depasita!");
+            throw new IllegalArgumentException("Lungime depasita!");
         ArrayList<Task> filteredTasks = new ArrayList<>();
         int i = 0;
         while(i<tasks.size())

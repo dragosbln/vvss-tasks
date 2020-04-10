@@ -6,6 +6,7 @@ import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
 
+import java.security.InvalidParameterException;
 import java.util.Date;
 
 public class TasksService {
@@ -52,10 +53,8 @@ public class TasksService {
         return filtered;
     }
 
-    public Iterable<Task> filterTasks(String title) throws Exception {
+    public Iterable<Task> filterTasks(String title) throws IllegalArgumentException {
         TasksOperations tasksOps = new TasksOperations(getObservableList());
-        Iterable<Task> filtered = tasksOps.tasksByTitle(title);
-
-        return filtered;
+        return tasksOps.tasksByTitle(title);
     }
 }
