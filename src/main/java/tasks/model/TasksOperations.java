@@ -2,6 +2,7 @@ package tasks.model;
 
 import javafx.collections.ObservableList;
 
+import java.security.InvalidParameterException;
 import java.util.*;
 
 public class TasksOperations {
@@ -26,6 +27,25 @@ public class TasksOperations {
         }
         return incomingTasks;
     }
+
+    public Iterable<Task> tasksByTitle(String title) throws Exception {
+        if(title.equals(""))
+            throw new Exception("Titlul cautat nu poate fi vid!");
+        if(title.length() > 30)
+            throw new Exception("Lungime depasita!");
+        ArrayList<Task> filteredTasks = new ArrayList<>();
+        int i = 0;
+        while(i<tasks.size())
+        {
+            Task t = tasks.get(i);
+            if(t.getTitle().contains(title)) {
+                filteredTasks.add(t);
+            }
+            i++;
+        }
+        return filteredTasks;
+    }
+
     public SortedMap<Date, Set<Task>> calendar( Date start, Date end){
         Iterable<Task> incomingTasks = incoming(start, end);
         TreeMap<Date, Set<Task>> calendar = new TreeMap<>();

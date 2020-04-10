@@ -51,4 +51,11 @@ public class TasksService {
 
         return filtered;
     }
+
+    public Iterable<Task> filterTasks(String title) throws Exception {
+        TasksOperations tasksOps = new TasksOperations(getObservableList());
+        Iterable<Task> filtered = tasksOps.tasksByTitle(title);
+
+        return filtered;
+    }
 }
