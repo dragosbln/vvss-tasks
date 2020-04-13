@@ -53,7 +53,7 @@ public class TasksService {
         return filtered;
     }
 
-    public Iterable<Task> filterTasks(String title) throws IllegalArgumentException {
+    public Task filterTasks(String title) throws IllegalArgumentException {
         TasksOperations tasksOps = new TasksOperations(getObservableList());
         return tasksOps.tasksByTitle(title);
     }

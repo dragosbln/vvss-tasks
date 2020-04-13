@@ -28,22 +28,22 @@ public class TasksOperations {
         return incomingTasks;
     }
 
-    public Iterable<Task> tasksByTitle(String title) throws IllegalArgumentException {
+    public Task tasksByTitle(String title) throws IllegalArgumentException {
         if(title.equals(""))
-            throw new IllegalArgumentException("Titlul cautat nu poate fi vid!");
-        if(title.length() > 30)
-            throw new IllegalArgumentException("Lungime depasita!");
-        ArrayList<Task> filteredTasks = new ArrayList<>();
+            throw new IllegalArgumentException("Title must not be empty!");
+        if(title.length() > 10)
+            throw new IllegalArgumentException("Length exceeded!");
+
         int i = 0;
         while(i<tasks.size())
         {
             Task t = tasks.get(i);
             if(t.getTitle().contains(title)) {
-                filteredTasks.add(t);
+                return t;
             }
             i++;
         }
-        return filteredTasks;
+        return null;
     }
 
     public SortedMap<Date, Set<Task>> calendar( Date start, Date end){
