@@ -22,6 +22,7 @@ public class Task implements Serializable, Cloneable {
     public static SimpleDateFormat getDateFormat(){
         return sdf;
     }
+    public Task(){};
     public Task(String title, Date time){
         if (time.getTime() < 0) {
             log.error("time below bound");
