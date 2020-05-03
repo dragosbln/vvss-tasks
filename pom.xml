@@ -176,10 +176,6 @@
               <goal>java</goal>
             </goals>
           </execution>
-          <execution>
-            <id>default-test</id>
-            <phase>none</phase>
-          </execution>
         </executions>
         <configuration>
           <mainClass>tasks.view.Main</mainClass>
