@@ -138,14 +138,6 @@
         <configuration>
           <!--<failIfNoTests>false</failIfNoTests>-->
         </configuration>
-        <executions>
-          <execution>
-            <id>default-test</id>
-            <configuration>
-              <skip>true</skip>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
