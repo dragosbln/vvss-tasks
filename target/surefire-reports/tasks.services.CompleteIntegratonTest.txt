@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: tasks.services.TaskValidatorTest
+Test set: tasks.services.CompleteIntegratonTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.016 s - in tasks.services.TaskValidatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in tasks.services.CompleteIntegratonTest

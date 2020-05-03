@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Prj234 - hdir2313_IntT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj234<br>Test Suite: Prj234 - hdir2313_IntT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 03/05/2020</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><b><p style="padding-left: 20px;"><a href="#toc_1">1. hdir2313_IntT</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_tc47642">Prj234-101: MockitoTaskServiceTest#testFilterName</a></p><p style="padding-left: 45px;"><a href="#toc_tc47644">Prj234-102: MockitoTaskServiceTest#testFilterDate</a></p><p style="padding-left: 45px;"><a href="#toc_tc47646">Prj234-103: RepositoryIntegratonTest#testFilterTitle</a></p><p style="padding-left: 45px;"><a href="#toc_tc47648">Prj234-104: RepositoryIntegratonTest#testFilterDate</a></p><p style="padding-left: 45px;"><a href="#toc_tc47650">Prj234-105: CompleteIntegratonTest#testFilterTitle</a></p><p style="padding-left: 45px;"><a href="#toc_tc47652">Prj234-106: CompleteIntegratonTest#testFilterDate</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>
+	Testing project for group 234</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1. Test Suite : hdir2313_IntT</h1>
+<a name="toc_tc47642"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-101: MockitoTaskServiceTest#testFilterName</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test the filter by name functionality.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.MockitoTaskServiceTest#testFilterName</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.MockitoTaskServiceTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc47644"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-102: MockitoTaskServiceTest#testFilterDate</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test filter by date functionality.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.MockitoTaskServiceTest#testFilterDate</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.MockitoTaskServiceTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc47646"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-103: RepositoryIntegratonTest#testFilterTitle</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test the filter by title functionality for the repository.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.RepositoryIntegratonTest#testFilterTitle</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.RepositoryIntegratonTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc47648"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-104: RepositoryIntegratonTest#testFilterDate</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test the filter by date functionality for the repository.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.RepositoryIntegratonTest#testFilterDate</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.RepositoryIntegratonTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc47650"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-105: CompleteIntegratonTest#testFilterTitle</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test the filter by title functionality for the entire system.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.CompleteIntegratonTest#testFilterTitle</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.CompleteIntegratonTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc47652"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj234-106: CompleteIntegratonTest#testFilterDate</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">hdir2313</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Test the filter by date functionality for the entire system.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >tasks.services.CompleteIntegratonTest#testFilterDate</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >tasks.services.CompleteIntegratonTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+
+</body>
+</html>
